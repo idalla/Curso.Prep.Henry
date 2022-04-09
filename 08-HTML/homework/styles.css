@@ -1,0 +1,40 @@
+	
+body {
+	 background-image: url(https://uruguayindubai.com/wp-content/uploads/2022/01/flag-uruguay_01.jpg);
+	}
+
+.divClass {
+	margin: 0 auto;
+	margin-left: 25%;
+	margin-right: 25%;
+	border-left: 25%;
+	border-right: 25%;
+	
+}
+#thirdDiv {
+		heigth:600px;
+		width: 500px;
+		padding: 50px;
+		border-color: aqua;
+		border: 20px;			
+		border-style: dotted;
+		font-style: italic;
+		margin-left: 25%;
+		margin-right: 25%;
+		border-left: 25%;
+		border-right: 25%;
+		background-color: seagreen;
+	   }
+#spanId { font-size:18px;
+	  margin: 50px;
+	  text-align: justify;
+
+}
+#moveId { 
+	margin-left: 10%;
+	margin-right: 10%;
+	
+	
+}
+
+				  

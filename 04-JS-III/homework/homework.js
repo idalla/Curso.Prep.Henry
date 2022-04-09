@@ -159,7 +159,7 @@ function todosIguales(arreglo) {
 
 } 
 
-
+ 
 function mesesDelAño(array) {
   //Dado un array que contiene algunos meses del año desordenados, recorrer el array buscando los meses de 
   // "Enero", "Marzo" y "Noviembre", guardarlo en nuevo array y retornarlo.
@@ -183,8 +183,7 @@ function mayorACien(array) {
   // Tu código:
   var x= [];
   for (var i = 0; i < array.length; i++) {
-    if(array[i] >= 0 && array[i + 1] <= 200) {console.log(array[i])}
-    if (array[i] > 100) {x.push(array[i])}
+    if (array[i] > 100 && array[i]<= 200) {x.push(array[i])}
     } return x
   }
 
@@ -201,25 +200,34 @@ function breakStatement(numero) {
 var x= numero;
 var y= []
 for (var i= 1; i< 11; i ++) {
- var z= x + 2*i;
-     if (z !== i){
-         y.push(z)
+ x= x + 2;
+ if (x=== i) {
+   return "Se interrumpió la ejecución"
+  break;}
+else {y.push(x)} 
  } 
-         else if (z === i) { 
-             return ('Se interrumpió la ejecución')}
-              
-}  return y 
-}
+ return y 
+ }
 
 
-function continueStatement(numero) {
+ function continueStatement(numero) {
   //Iterar en un bucle aumentando en 2 el numero recibido hasta un límite de 10 veces.
   //Guardar cada nuevo valor en un array.    
   //Devolver el array
   //Cuando el número de iteraciones alcance el valor 5, no se suma en ese caso y se continua con la siguiente iteración
   //Pista: usá el statement 'continue'
   // Tu código:
-}
+   var x= numero;
+   var y= [];
+   for(var i=1; i<11; i++) {
+   var z= x + 2*i; 
+    if (i === 5) {
+      continue; 
+    } 
+    else {y.push(z)}
+   } return y
+
+  }
 
 
 // No modificar nada debajo de esta línea
