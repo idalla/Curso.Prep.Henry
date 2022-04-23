@@ -40,7 +40,7 @@ function multiplicarNumeroDesconocidoPorCinco(objetoMisterioso) {
   // "objetoMisterioso" tiene una propiedad llamada "numeroMisterioso"
   // Multiplica el numeroMisterioso por 5 y devuelve el producto
   // Tu código:
- return objetoMisterioso['numeroMisterioso'] * 5
+  return objetoMisterioso['numeroMisterioso'] * 5
 
 }
 
@@ -61,7 +61,7 @@ function nuevoUsuario(nombre, email, password) {
     nombre: nombre,
     email: email,
     password: password,
-  };
+  }
   return Usuario;
 }
 
@@ -123,9 +123,10 @@ function pasarUsuarioAPremium(usuarios) {
   // Define cada propiedad "esPremium" de cada objeto como "true"
   // Devuelve el array de usuarios
   // Tu código:
-  for (var i= 0; i < usuarios.length; i++)
+  for (var i= 0; i < usuarios.length; i++) {
   usuarios[i]['esPremium'] = true;
-    return usuarios;
+  }  
+  return usuarios;
 }
 
 function sumarLikesDeUsuario(usuario) {
@@ -153,8 +154,9 @@ function agregarMetodoCalculoDescuento(producto) {
   // producto.calcularPrecioDescuento() -> 20 - (20 * 0.2)
   // Tu código:
   producto['calcularPrecioDescuento'] = function (){
-    return (producto.precio - (producto.precio * producto.porcentajeDeDescuento))};
-    return producto;
+    return (producto.precio - (producto.precio * producto.porcentajeDeDescuento));
+  }
+  return producto;
 
 }
 

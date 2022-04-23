@@ -64,10 +64,10 @@ function filter(array) {
   var array2 = [];
   for ( var i = 0; i < array.length; i++) {
     if (array[i][0] === 'a') {
-      array2.push(array[i])
+      array2.push(array[i]);
     }
-  };
-  return array2 
+  }
+  return array2; 
 
 }
 
